@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import { AuthProvider } from "./context/AuthContext";
-import "./App.css";
-import UserAuth from "./components/userAuth/UserAuth";
-import AuthDisplay from "./components/userAuth/AuthDisplay";
+import React from "react";
+import "./App.scss";
+import Title from "./components/Title/Title";
 
 function App() {
   return (
-    <AuthProvider>
-      <div className="App">
-        <h2>#4 useContext</h2>
-        <UserAuth />
-        <AuthDisplay />
-      </div>
-    </AuthProvider>
+    <div className="App">
+      <Title titleText={"#6 useCallback"} />
+    </div>
   );
 }
 
