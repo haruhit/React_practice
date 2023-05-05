@@ -4,7 +4,7 @@ type Props = {
   titleText: string;
 };
 
-const Title = ({ titleText: Props }) => {
+const Title: React.VFC<Props> = ({ titleText }) => {
   return <h2>{titleText}</h2>;
 };
 
